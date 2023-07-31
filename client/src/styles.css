@@ -1,0 +1,130 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+  }
+  
+  h1 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form label,
+  form input,
+  form button {
+    margin-bottom: 10px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  form button:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ccc;
+  }
+  
+  table th,
+  table td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Papildomos spalvos */
+  button.update {
+    background-color: #28a745; 
+  }
+  
+  button.delete {
+    background-color: #dc3545; 
+  }
+  
+  button.create {
+    background-color: #17a2b8; 
+  }
+  
+  table.show-details {
+    background-color: #f8f9fa; 
+  }
+  
+  /* Šiek tiek animacijų */
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  button {
+    transform: scale(1);
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  table {
+    opacity: 0;
+  }
+  
+  table.show {
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
